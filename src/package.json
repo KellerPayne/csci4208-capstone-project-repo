@@ -1,0 +1,14 @@
+{
+    "name": "uno-study-arena",
+    "version": "1.0.0",
+    "description": "A thick-server, thin-client multiplayer study quiz game for CompSci students at UNO",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "express-session": "^1.17.3"
+    }
+}
