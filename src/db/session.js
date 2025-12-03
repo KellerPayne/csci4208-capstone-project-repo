@@ -15,9 +15,11 @@ export const sessions = {
             createdAt       // timestamp for debugging/sorting if needed
         };
 
-        db.cache.push(newSession);      // pushes oabject into in-memory cache
-        db.save();      // saves it to sessions.json via atomic write
-        return newSession;      // returns the session to the service layer
+        const all = db.getAll();
+        all.push(newSession);
+        db.writeAll(all);
+
+        return newSession;
     },
 
     // returns all sessions from the in-memory cache

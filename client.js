@@ -89,6 +89,7 @@ async function submitAnswer(answerIndex) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 playerId: currentPlayer.id,
+                sessionId: currentSession.id,
                 questionId: currentQuestion.id,
                 answerIndex
             })

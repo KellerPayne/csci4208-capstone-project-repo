@@ -2,11 +2,11 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { playersRouter } from './api/playersRouter.js';
-import { sessionRouter } from './api/sessionRouter.js';
-import { quizRouter } from './api/quizRouter.js';
-import { sessionMiddleware } from './middleware/sessionMiddleware.js';
-import { errorHandler } from './middleware/errorHandler.js';
+import { playersRouter } from './src/api/playersRouter.js';
+import { sessionRouter } from './src/api/sessionRouter.js';
+import { quizRouter } from './src/api/quizRouter.js';
+import { sessionMiddleware } from './src/middleware/sessionMiddleware.js';
+import { errorHandler } from './src/middleware/errorHandler.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -23,7 +23,7 @@ app.use('/api/session', sessionRouter);
 app.use('/api/quiz', quizRouter);
 
 // Serve client files
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(__dirname));
 
 // Error handler (must come LAST)
 app.use(errorHandler);

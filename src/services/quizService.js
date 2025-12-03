@@ -1,10 +1,17 @@
 import {questions} from '../db/questions.js';     // imports questions wrapper to connect quiz logic to questions.json
+import {playerService} from './playerService.js';
+import {sessions} from '../db/session.js';
+import {sessionService} from './sessionService.js';
 
 // creates a namespace of quiz-related functions.
 export const quizService = {
     // gets questions by subject prefix
     getQuestionsBySubject(subjectPrefix) {
-        return questions.getAll().filter(q => q.id.startsWith(subjectPrefix));
+        const all = questions.getAll();
+        console.log("ALL QUESTIONS:", all);
+        const filtered = all.filter(q => q.id.startsWith(subjectPrefix));
+        console.log("FILTERED:", filtered);
+        return filtered;
     },
 
     // gets questions by a specific index
@@ -14,19 +21,19 @@ export const quizService = {
     },
 
     // checks the answer of a question
-    checkAnswer(questionId, answerIndex) {
-        const q = questions.get(questionId);        // gets the question object from questions.json
+    checkAnswer(id, answerIndex) {
+        const q = questions.get(id);        // gets the question object from questions.json
+        if (!q) return false;
         return q.correct === answerIndex;       // compares the answer and returns true if correct or false if incorrect
     },
 
-    submitAnswer(playerId, questionId, answerIndex) {
-        const correct = this.checkAnswer(questionId, answerIndex);
+    submitAnswer(playerId, sessionId, id, answerIndex) {
+        const correct = this.checkAnswer(id, answerIndex);
         if (correct) {
             playerService.updateScore(playerId, 1);
         }
 
-        const allSessions = sessions.getAll();
-        const session = allSessions.find(s => s.playerIds.includes(playerId));
+        const session = sessions.getId(sessionId);
 
         if (session) {
             sessionService.advanceToNextQuestion(session.id);

@@ -1,4 +1,4 @@
-import {sessions} from '../db/sessions.js';     // import the data layer wrapper for sessions.json file
+import {sessions} from '../db/session.js';     // import the data layer wrapper for sessions.json file
 import {quizService} from './quizService.js'; // import question-resolution logic from quizService.js
 
 /*
@@ -36,7 +36,17 @@ export const sessionService = {
     getCurrentQuestion(sessionId) {
         const session = sessions.getId(sessionId);
 
-        return quizService.getQuestionByIndexForSubject(session.subjectPrefix, session.currentQuestionIndex);
+        if (!session) return null;
+
+        const q = quizService.getQuestionByIndexForSubject(session.subjectPrefix, session.currentQuestionIndex);
+        
+        if (!q) return null;
+
+        return {
+            id: q.id,
+            text: q.text,
+            choices: q.choices
+        };
     },
 
     advanceToNextQuestion(sessionId) {
