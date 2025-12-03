@@ -1,4 +1,3 @@
-
 import {sessions} from '../db/sessions.js';     // import the data layer wrapper for sessions.json file
 import {quizService} from './quizService.js'; // import question-resolution logic from quizService.js
 

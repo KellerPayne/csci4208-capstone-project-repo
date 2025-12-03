@@ -23,7 +23,7 @@ app.use('/api/session', sessionRouter);
 app.use('/api/quiz', quizRouter);
 
 // Serve client files
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname)));
 
 // Error handler (must come LAST)
 app.use(errorHandler);
