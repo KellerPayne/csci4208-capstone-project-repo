@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Uno Study Arena</title>
-    </head>
-    <body>
-        <h1>UNO Study Arena</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UNO Study Arena</title>
+</head>
+<body>
+  <h1>UNO Study Arena</h1>
 
-        <div id = "status"></div>
+  <div id="status"></div>
 
-        <input id="playerName" placeholder="Enter your name">
-        <button id="createPlayer">Join Game</button>
+  <!-- Player name input -->
+  <div>
+    <label for="playerName">Name:</label>
+    <input id="playerName" type="text" placeholder="Enter your name" />
+  </div>
 
-        <div id="questionArea" style="display:none">
-            <h2 id="questionText"></h2>
-            <div id="choices"></div>
-        </div>
+  <!-- Subject selector -->
+  <div>
+    <label for="subjectSelect">Subject:</label>
+    <select id="subjectSelect">
+      <option value="">-- Choose a subject --</option>
+      <option value="q">Java</option>
+      <option value="ds">Data Structures</option>
+      <option value="os">Operating Systems</option>
+      <option value="alg">Algorithms</option>
+      <option value="sql">SQL</option>
+      <option value="py">Python</option>
+    </select>
+  </div>
 
-        <script src="client.js"></script>
-    </body>
+  <button id="joinGame">Join Game</button>
+
+  <hr />
+
+  <!-- Question area -->
+  <div id="questionArea" style="display: none;">
+    <h2 id="questionText"></h2>
+    <div id="choices"></div>
+  </div>
+
+  <script src="client.js"></script>
+</body>
 </html>

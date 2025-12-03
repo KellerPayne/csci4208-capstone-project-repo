@@ -3,7 +3,7 @@ import { players } from '../db/players.js';       // imports  players operations
 // creates a plain object containing all player related functions
 export const playerService = {
     createPlayer(name) {        // validates and creates a new player
-        if (!name | name.length < 2) {      // checks that the name exists and is at least 2 characters long
+        if (!name || name.length < 2) {      // checks that the name exists and is at least 2 characters long
             throw new Error('Name is required.');       // if not, throws a new error
         }
         return players.create(name); // else it calls the DB layer to actually create the player

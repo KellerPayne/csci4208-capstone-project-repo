@@ -3,15 +3,16 @@ import crypto from 'crypto';        // used to generate unique sessionIDs
 
 const db = new Database('sessions.json'); // creates a database instance for sessions as sessions.json
 
-export const session = {
+export const sessions = {
     // creates a new game session
-    create() {
+    create({subjectPrefix, playerIds, currentQuestionIndex, isActive, createdAt}) {
         const newSession = {
             id: crypto.randomUUID(),        // unique session id generated and saved in id field
-            playerIds: [],      // list of playerId of players in the game
-            currentQuestionIndex: 0,        // which question the game is currently on
-            isActive: true,     // true when session is active
-            createdAt: Date.now()       // timestamp for debugging/sorting if needed
+            subjectPrefix,
+            playerIds,
+            currentQuestionIndex,        // which question the game is currently on
+            isActive,     // true when session is active
+            createdAt       // timestamp for debugging/sorting if needed
         };
 
         db.cache.push(newSession);      // pushes oabject into in-memory cache
@@ -41,7 +42,7 @@ export const session = {
     },
 
     // returns the current active game session
-    getActive() {
-        return db.getAll().find(s => s.isActive);
+    getActiveForSubject(subjectPrefix) {
+        return db.getAll().find(s => s.isActive && s.subjectPrefix === subjectPrefix);
     }
 };

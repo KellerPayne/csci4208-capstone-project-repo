@@ -3,12 +3,29 @@ import {sessionService} from '../services/sessionService.js';       // import ga
 
 export const sessionRouter = express.Router();  // create new router object
 // allows player to join the game session
-sessionRouter.post('/join', (req, res) => {
-    const session = sessionService.joinSession(req.body.playerId);      // gets playerId from request body before calling sessionService.joinSession()
-    res.json(session);  // responds with the session object
+sessionRouter.post('/join', (req, res, next) => {
+    try {
+        const {playerId, subjectPrefix} = req.body;
+
+        if (!playerId || !subjectPrefix) {
+            throw new Error("Missing required fields: playerId, subjectPrefix");
+        }
+
+        const session = sessionService.joinSession(playerId, subjectPrefix);      // gets playerId from request body before calling sessionService.joinSession()
+        res.json(session);  // responds with the session object
+    } catch (err){
+        next(err);
+    }
 });
+
 // get question for the current session
-sessionRouter.get('/current-question', (req, res) => {
-    const q = sessionService.getCurrentQuestion(req.session.sessionId);     // middleware sets req.session.sessionId and assigns a session ID cookie, calls service layer
-    res.json(q);        // sends question object as JSON
+sessionRouter.get('/current-question/:sessionId', (req, res, next) => {
+    try {
+        const {sessionId} = req.params;
+
+        const q = sessionService.getCurrentQuestion(sessionId);     // middleware sets req.session.sessionId and assigns a session ID cookie, calls service layer
+        res.json(q);        // sends question object as JSON
+    } catch (err) {
+        next(err);
+    }
 });

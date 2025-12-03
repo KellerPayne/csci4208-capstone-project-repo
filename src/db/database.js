@@ -9,7 +9,7 @@ Constructor method that creates a new database for a json file passed in as argu
 
 export class Database {
     constructor(fileName) {     // create an instance of Database class that controls the fileName passed in
-        this.file = path.join(dbPath, filename);    // combines absolute path and the fileName, essentially adding the file to the directory
+        this.file = path.join(dbPath, fileName);    // combines absolute path and the fileName, essentially adding the file to the directory
         this.cache = null;      // sets up an in-memory cache for collection being created
         this.load();    // calls the load method explained below
     }

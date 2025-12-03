@@ -9,19 +9,40 @@ Creates an object that contains all logic related to game sessions, such as:
 */
 export const sessionService = {
     // core of multiplayer logic
-    joinSession(playerId) {
-        let session = sessions.getActive();     // look for an active session
-        if (!session) {     // if one doesn't exist
-            session = sessions.create();        // create one
-        }
-        session.playerIds.push(playerId);       // adds player to the session
-        sessions.update(session.id, session);       // updates the session inside sessions.json using atomic write
-        return session;     // returns the updated session
+    createSession(subjectPrefix) {
+        return sessions.create({
+            subjectPrefix,
+            playerIds: [],
+            currentQuestionIndex: 0,
+            isActive: true,
+            createdAt: Date.now()
+        });
     },
 
-    // tells the thin client exactly what question to display
+    joinSession(playerId, subjectPrefix) {
+        let session = sessions.getActiveForSubject(subjectPrefix);
+
+        if (!session) {
+            session = this.createSession(subjectPrefix);
+        }
+
+        if (!session.playerIds.includes(playerId)) {
+            session.playerIds.push(playerId);
+        }
+
+        sessions.update(session.id, session);
+        return session;
+    },
+
     getCurrentQuestion(sessionId) {
-        const session = sessions.get(sessionId);    // get the session from sessions.json by the ID
-        return quizService.getQuestionByIndex(session.currentQuestionIndex);        // return current question based on index
+        const session = sessions.getId(sessionId);
+
+        return quizService.getQuestionByIndexForSubject(session.subjectPrefix, session.currentQuestionIndex);
+    },
+
+    advanceToNextQuestion(sessionId) {
+        const session = sessions.getId(sessionId);
+        session.currentQuestionIndex += 1;
+        sessions.update(sessionId, session);
     }
 };

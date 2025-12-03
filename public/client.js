@@ -1,66 +1,111 @@
-/*
-    Front-End Thin-Client that:
-    - Shows UI
-    - Sends requests to Express API
-    - Renders results
-    - DOES NOT HANDLE GAME LOGIC!
-*/
+const statusEl = document.getElementById('status');
+const questionArea = document.getElementById('questionArea');
+const questionTextEl = document.getElementById('questionText');
+const choicesEl = document.getElementById('choices');
+const joinButton = document.getElementById('joinGame');
+const playerNameInput = document.getElementById('playerName');
+const subjectSelect = document.getElementById('subjectSelect');
 
-// DOM References
-const statusElement = document.getElementById('status');        // the Message Bar ("loading...", "correct!")
-const questionArea = document.getElementById('questionArea');       // Section containing question UI
+let currentPlayer = null;
+let currentQuestion = null;
+let currentSession = null;
 
-/*
-    Event listener for the Join Game button.
+function setStatus(msg) {
+    statusEl.textContent = msg;
+}
 
-    When the button is clicked:
-        - async function is ran
-        - allows for await to be used inside for fetch calls
-*/
+async function joinGame() {
+    const name = playerNameInput.value.trim();
+    const subjectPrefix = subjectSelect.value;
 
-document.getElementById('createPlayer').onclick = async () => {
-    statusElement.textContent = 'Creating player...';       // show loading state
-    
-    const name = document.getElementById('playerName').ariaValueMax;        // gets the player's name
-    const res = await fetch('/api/players', {       // create player object via API POST request
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({name})
-    });
+    if (!name) return setStatus("Please enter your name.");
+    if (!subjectPrefix) return setStatus("Please select a subject.");
 
-    const player = await res.json();
+    try {
+        // Create player
+        const playerRes = await fetch('/api/players', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name })
+        });
 
-    statusElement.textContent = `Welcome, ${player.name}!`;     // displays personalized welcome message
+        currentPlayer = await playerRes.json();
 
-    const q = await fetch('/api/session/current-question');     // fetches current question
-    const question = await q.json();
+        // Join session
+        const sessionRes = await fetch('/api/session/join', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                playerId: currentPlayer.id,
+                subjectPrefix
+            })
+        });
 
-    // shows the question on screen
+        currentSession = await sessionRes.json();
+
+        setStatus("Session joined! Loading first question...");
+        await loadCurrentQuestion();
+    } catch (err) {
+        setStatus(`Error: ${err.message}`);
+    }
+}
+
+async function loadCurrentQuestion() {
+    try {
+        const res = await fetch(`/api/session/current-question/${currentSession.id}`);
+        const question = await res.json();
+
+        if (!question) {
+            setStatus("No more questions for this subject.");
+            questionArea.style.display = "none";
+            return;
+        }
+
+        currentQuestion = question;
+        renderQuestion(question);
+
+    } catch (err) {
+        setStatus(`Error: ${err.message}`);
+    }
+}
+
+function renderQuestion(question) {
     questionArea.style.display = 'block';
-    document.getElementById('questionText').textContent = question.text;
+    questionTextEl.textContent = question.text;
+    choicesEl.innerHTML = '';
 
-    // clears old choices
-    const choicesDiv = document.getElementById('choices');
-    choicesDiv.innerHTML = '';
-
-
-    // renders answer choices
-    question.choices.forEach((c, i) => {
+    question.choices.forEach((choice, index) => {
         const btn = document.createElement('button');
-        btn.textContent = c;
-        btn.onclick = async () => {     // sends answer to server on click
-            const res = await fetch('/api/quiz/answer', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({
-                    playerId: player.id,        // sends playerID
-                    questionId: question.id,    // questionID
-                    answer: i   // and index of answer player selected
-                })
-            });
-            const result = await res.json();        // reads server's response
-            statusElement.textContent = result.correct ? 'Correct!' : 'Incorrect!';     // displays incorrect or correct
-        };
-        choicesDiv.appendChild(btn);
+        btn.textContent = choice;
+        btn.onclick = () => submitAnswer(index);
+        choicesEl.appendChild(btn);
     });
-};
+}
+
+async function submitAnswer(answerIndex) {
+    try {
+        const res = await fetch('/api/quiz/answer', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                playerId: currentPlayer.id,
+                questionId: currentQuestion.id,
+                answerIndex
+            })
+        });
+
+        const result = await res.json();
+
+        if (result.correct) {
+            setStatus("Correct!");
+        } else {
+            setStatus("Incorrect.");
+        }
+
+        await loadCurrentQuestion();
+    } catch (err) {
+        setStatus(`Error: ${err.message}`);
+    }
+}
+
+joinButton.addEventListener('click', joinGame);
