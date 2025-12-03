@@ -1,0 +1,1811 @@
+[
+  {
+    "id": "q1",
+    "text": "What is the size of an int in Java?",
+    "choices": ["8 bits", "16 bits", "32 bits", "64 bits"],
+    "correct": 2
+  },
+  {
+    "id": "q2",
+    "text": "Which keyword is used to inherit a class in Java?",
+    "choices": ["implements", "inherits", "extends", "super"],
+    "correct": 2
+  },
+  {
+    "id": "q3",
+    "text": "Which method is the entry point of a Java program?",
+    "choices": ["start()", "run()", "main()", "init()"],
+    "correct": 2
+  },
+  {
+    "id": "q4",
+    "text": "Which of the following is NOT a Java primitive type?",
+    "choices": ["double", "boolean", "String", "char"],
+    "correct": 2
+  },
+  {
+    "id": "q5",
+    "text": "What is the default value of a boolean in Java?",
+    "choices": ["true", "false", "0", "null"],
+    "correct": 1
+  },
+
+  {
+    "id": "q6",
+    "text": "Which operator is used for equality comparison?",
+    "choices": ["=", "==", "===", "equals"],
+    "correct": 1
+  },
+  {
+    "id": "q7",
+    "text": "Which of the following is a checked exception?",
+    "choices": ["NullPointerException", "IOException", "ArithmeticException", "ArrayIndexOutOfBoundsException"],
+    "correct": 1
+  },
+  {
+    "id": "q8",
+    "text": "Which collection does NOT allow duplicates?",
+    "choices": ["List", "Set", "ArrayList", "LinkedList"],
+    "correct": 1
+  },
+  {
+    "id": "q9",
+    "text": "Which keyword prevents inheritance?",
+    "choices": ["static", "protected", "final", "sealed"],
+    "correct": 2
+  },
+  {
+    "id": "q10",
+    "text": "What does JVM stand for?",
+    "choices": ["Java Variable Machine", "Java Virtual Machine", "Java Visual Model", "Java Vendor Manager"],
+    "correct": 1
+  },
+
+  {
+    "id": "q11",
+    "text": "Which loop is guaranteed to run at least once?",
+    "choices": ["for", "while", "do-while", "foreach"],
+    "correct": 2
+  },
+  {
+    "id": "q12",
+    "text": "Which keyword is used to create an instance of a class?",
+    "choices": ["class", "instanceof", "create", "new"],
+    "correct": 3
+  },
+  {
+    "id": "q13",
+    "text": "What is method overloading?",
+    "choices": ["Same method name, different parameters", "Same parameters, different return types", "Redefining method in subclass", "A static method calling itself"],
+    "correct": 0
+  },
+  {
+    "id": "q14",
+    "text": "Which of these is a wrapper class?",
+    "choices": ["int", "Integer", "char", "float"],
+    "correct": 1
+  },
+  {
+    "id": "q15",
+    "text": "Which access modifier makes a member visible only within its own class?",
+    "choices": ["private", "public", "protected", "default"],
+    "correct": 0
+  },
+
+  {
+    "id": "q16",
+    "text": "Which collection is synchronized?",
+    "choices": ["ArrayList", "Vector", "HashMap", "HashSet"],
+    "correct": 1
+  },
+  {
+    "id": "q17",
+    "text": "What does the 'static' keyword mean?",
+    "choices": ["Belongs to the object", "Cannot be overridden", "Belongs to the class", "Cannot change value"],
+    "correct": 2
+  },
+  {
+    "id": "q18",
+    "text": "Which keyword is used inside a switch statement?",
+    "choices": ["case", "switch", "label", "option"],
+    "correct": 0
+  },
+  {
+    "id": "q19",
+    "text": "Which interface must be implemented to create a thread?",
+    "choices": ["Runnable", "Executable", "Callable", "Threadable"],
+    "correct": 0
+  },
+  {
+    "id": "q20",
+    "text": "What is the parent class of all Java classes?",
+    "choices": ["Object", "Class", "Base", "Root"],
+    "correct": 0
+  },
+
+  {
+    "id": "q21",
+    "text": "Which operator is used for string concatenation?",
+    "choices": ["&", "+", "++", "|"],
+    "correct": 1
+  },
+  {
+    "id": "q22",
+    "text": "What is the result of 10 / 3 in Java?",
+    "choices": ["3.33", "3", "3.0", "Error"],
+    "correct": 1
+  },
+  {
+    "id": "q23",
+    "text": "Which package is imported by default?",
+    "choices": ["java.util", "java.io", "java.lang", "None"],
+    "correct": 2
+  },
+  {
+    "id": "q24",
+    "text": "Which file extension represents compiled Java bytecode?",
+    "choices": [".java", ".jar", ".class", ".byte"],
+    "correct": 2
+  },
+  {
+    "id": "q25",
+    "text": "What does JDK stand for?",
+    "choices": ["Java Deployment Kit", "Java Development Kit", "Java Debugging Kit", "Java Data Kernel"],
+    "correct": 1
+  },
+
+  {
+    "id": "q26",
+    "text": "What does 'final' mean when applied to a variable?",
+    "choices": ["Value cannot change", "Variable is private", "Method cannot override", "Reserved keyword"],
+    "correct": 0
+  },
+  {
+    "id": "q27",
+    "text": "Which class is used for input reading?",
+    "choices": ["Scanner", "Reader", "InputStream", "Console"],
+    "correct": 0
+  },
+  {
+    "id": "q28",
+    "text": "Which is NOT a feature of Java?",
+    "choices": ["Platform-independent", "Object-oriented", "Supports pointers", "Robust"],
+    "correct": 2
+  },
+  {
+    "id": "q29",
+    "text": "Which operator is the logical OR?",
+    "choices": ["||", "|", "or", "=="],
+    "correct": 0
+  },
+  {
+    "id": "q30",
+    "text": "What is the range of byte in Java?",
+    "choices": ["0 to 255", "-128 to 127", "-255 to 255", "-32k to 32k"],
+    "correct": 1
+  },
+
+  {
+    "id": "q31",
+    "text": "Which keyword is used to handle exceptions?",
+    "choices": ["throw", "catch", "try", "error"],
+    "correct": 2
+  },
+  {
+    "id": "q32",
+    "text": "Which method is called when an object is created?",
+    "choices": ["constructor", "creator", "initializer", "start"],
+    "correct": 0
+  },
+  {
+    "id": "q33",
+    "text": "Which collection is key-value based?",
+    "choices": ["List", "Set", "Map", "Queue"],
+    "correct": 2
+  },
+  {
+    "id": "q34",
+    "text": "Which keyword allows a subclass to use a superclass constructor?",
+    "choices": ["base", "super", "parent", "extends"],
+    "correct": 1
+  },
+  {
+    "id": "q35",
+    "text": "Which one is NOT a Java loop?",
+    "choices": ["for", "foreach", "loop", "while"],
+    "correct": 2
+  },
+
+  {
+    "id": "q36",
+    "text": "Which exception occurs when dividing by zero?",
+    "choices": ["NullPointerException", "ArithmeticException", "IOException", "IllegalStateException"],
+    "correct": 1
+  },
+  {
+    "id": "q37",
+    "text": "What does the keyword 'void' mean?",
+    "choices": ["Returns nothing", "Returns an int", "Method is private", "Method is static"],
+    "correct": 0
+  },
+  {
+    "id": "q38",
+    "text": "Which data type can store decimals?",
+    "choices": ["int", "long", "float", "char"],
+    "correct": 2
+  },
+  {
+    "id": "q39",
+    "text": "What is a constructor?",
+    "choices": ["A class", "A constant value", "A method called when an object is created", "An interface"],
+    "correct": 2
+  },
+  {
+    "id": "q40",
+    "text": "Which statement exits a loop?",
+    "choices": ["stop", "break", "end", "quit"],
+    "correct": 1
+  },
+
+  {
+    "id": "q41",
+    "text": "Which access modifier allows visibility everywhere?",
+    "choices": ["private", "protected", "public", "default"],
+    "correct": 2
+  },
+  {
+    "id": "q42",
+    "text": "What is the keyword to inherit an interface?",
+    "choices": ["extends", "inherits", "uses", "implements"],
+    "correct": 3
+  },
+  {
+    "id": "q43",
+    "text": "Which feature lets Java run the same program on any OS?",
+    "choices": ["Compiler", "JVM", "JAR files", "Javadoc"],
+    "correct": 1
+  },
+  {
+    "id": "q44",
+    "text": "Which keyword is used to throw an exception manually?",
+    "choices": ["catch", "throw", "error", "throws"],
+    "correct": 1
+  },
+  {
+    "id": "q45",
+    "text": "Which keyword is used in a method signature to indicate it may cause an exception?",
+    "choices": ["throw", "throws", "catch", "exception"],
+    "correct": 1
+  },
+
+  {
+    "id": "q46",
+    "text": "Which class defines the toString() method?",
+    "choices": ["Object", "String", "System", "Arrays"],
+    "correct": 0
+  },
+  {
+    "id": "q47",
+    "text": "Which operator is used to access members of an object?",
+    "choices": [".", "->", "::", "#"],
+    "correct": 0
+  },
+  {
+    "id": "q48",
+    "text": "Which concept means multiple forms of a method?",
+    "choices": ["Encapsulation", "Inheritance", "Polymorphism", "Abstraction"],
+    "correct": 2
+  },
+  {
+    "id": "q49",
+    "text": "Which keyword creates a constant?",
+    "choices": ["const", "static", "final", "let"],
+    "correct": 2
+  },
+  {
+    "id": "q50",
+    "text": "What is the result of 'Java' + 10?",
+    "choices": ["20", "Error", "Java10", "10Java"],
+    "correct": 2
+  },
+  {
+    "id": "ds1",
+    "text": "Which data structure uses LIFO (Last In, First Out)?",
+    "choices": ["Queue", "Stack", "LinkedList", "Tree"],
+    "correct": 1
+  },
+  {
+    "id": "ds2",
+    "text": "Which interface in Java is the root of the collection hierarchy?",
+    "choices": ["Collection", "List", "Iterable", "Map"],
+    "correct": 2
+  },
+  {
+    "id": "ds3",
+    "text": "Which data structure guarantees O(1) average-time lookup?",
+    "choices": ["LinkedList", "HashMap", "TreeMap", "Vector"],
+    "correct": 1
+  },
+  {
+    "id": "ds4",
+    "text": "What does a Java TreeMap use internally?",
+    "choices": ["Hash table", "Red-Black Tree", "Binary Heap", "AVL Tree"],
+    "correct": 1
+  },
+  {
+    "id": "ds5",
+    "text": "Which Java collection allows duplicates and maintains insertion order?",
+    "choices": ["HashSet", "TreeSet", "LinkedHashSet", "LinkedList"],
+    "correct": 2
+  },
+  {
+    "id": "ds6",
+    "text": "Which collection is synchronized?",
+    "choices": ["ArrayList", "LinkedList", "Vector", "HashSet"],
+    "correct": 2
+  },
+  {
+    "id": "ds7",
+    "text": "Which data structure is best for implementing a priority queue?",
+    "choices": ["Binary Heap", "HashMap", "Stack", "LinkedList"],
+    "correct": 0
+  },
+  {
+    "id": "ds8",
+    "text": "Which class implements the Queue interface in Java?",
+    "choices": ["ArrayDeque", "HashSet", "Vector", "FileReader"],
+    "correct": 0
+  },
+  {
+    "id": "ds9",
+    "text": "What is the time complexity of searching in a balanced binary search tree?",
+    "choices": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "correct": 1
+  },
+  {
+    "id": "ds10",
+    "text": "Which structure naturally allows breadth-first traversal?",
+    "choices": ["Stack", "Queue", "Priority Queue", "ArrayList"],
+    "correct": 1
+  },
+  {
+    "id": "ds11",
+    "text": "Which interface provides random access capabilities?",
+    "choices": ["Queue", "List", "Set", "Map"],
+    "correct": 1
+  },
+  {
+    "id": "ds12",
+    "text": "What does HashSet use internally?",
+    "choices": ["TreeMap", "LinkedList", "HashMap", "Hashtable"],
+    "correct": 2
+  },
+  {
+    "id": "ds13",
+    "text": "Which Java collection guarantees natural ordering?",
+    "choices": ["ArrayList", "TreeSet", "HashSet", "Vector"],
+    "correct": 1
+  },
+  {
+    "id": "ds14",
+    "text": "What is the worst-case time complexity of inserting into a HashMap?",
+    "choices": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "correct": 2
+  },
+  {
+    "id": "ds15",
+    "text": "Which data structure is best for recursive algorithms?",
+    "choices": ["Queue", "Stack", "Tree", "Heap"],
+    "correct": 1
+  },
+  {
+    "id": "ds16",
+    "text": "Which Java class implements a doubly linked list?",
+    "choices": ["LinkedList", "ArrayList", "Stack", "TreeSet"],
+    "correct": 0
+  },
+  {
+    "id": "ds17",
+    "text": "Which collection prohibits duplicates?",
+    "choices": ["ArrayList", "LinkedList", "HashSet", "Vector"],
+    "correct": 2
+  },
+  {
+    "id": "ds18",
+    "text": "What is the time complexity of accessing an element in an ArrayList by index?",
+    "choices": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "correct": 0
+  },
+  {
+    "id": "ds19",
+    "text": "What is the Java interface used for key-value pairs?",
+    "choices": ["Set", "Collection", "Map", "List"],
+    "correct": 2
+  },
+  {
+    "id": "ds20",
+    "text": "Which data structure supports fast insertion at both ends?",
+    "choices": ["HashMap", "ArrayList", "ArrayDeque", "Stack"],
+    "correct": 2
+  },
+  {
+    "id": "ds21",
+    "text": "Which traversal of a binary tree visits root last?",
+    "choices": ["Pre-order", "In-order", "Post-order", "Level-order"],
+    "correct": 2
+  },
+  {
+    "id": "ds22",
+    "text": "Which Java class is best for FIFO operations?",
+    "choices": ["Stack", "Queue", "Set", "TreeMap"],
+    "correct": 1
+  },
+  {
+    "id": "ds23",
+    "text": "Which collection grows dynamically as needed?",
+    "choices": ["Array", "ArrayList", "Set", "Map"],
+    "correct": 1
+  },
+  {
+    "id": "ds24",
+    "text": "Which Java class sorts keys automatically?",
+    "choices": ["HashMap", "LinkedHashMap", "TreeMap", "Properties"],
+    "correct": 2
+  },
+  {
+    "id": "ds25",
+    "text": "Which structure is commonly used to detect cycles in a graph?",
+    "choices": ["Queue", "HashSet", "Stack", "Tree"],
+    "correct": 1
+  },
+  {
+    "id": "ds26",
+    "text": "Which method retrieves but does not remove the head of a queue?",
+    "choices": ["remove()", "poll()", "peek()", "pop()"],
+    "correct": 2
+  },
+  {
+    "id": "ds27",
+    "text": "Which implementation provides O(log n) insertion in Java?",
+    "choices": ["TreeSet", "HashSet", "ArrayList", "LinkedList"],
+    "correct": 0
+  },
+  {
+    "id": "ds28",
+    "text": "Which tree structure ensures balancing automatically?",
+    "choices": ["Binary Tree", "Red-Black Tree", "Heap", "AVL Tree"],
+    "correct": 1
+  },
+  {
+    "id": "ds29",
+    "text": "Which collection type allows null keys and values?",
+    "choices": ["Hashtable", "TreeMap", "HashMap", "TreeSet"],
+    "correct": 2
+  },
+  {
+    "id": "ds30",
+    "text": "In a min-heap, where is the smallest element?",
+    "choices": ["Root", "Leftmost leaf", "Rightmost leaf", "Random position"],
+    "correct": 0
+  },
+  {
+    "id": "ds31",
+    "text": "Which data structure is ideal for depth-first search?",
+    "choices": ["Queue", "Stack", "ArrayList", "HashSet"],
+    "correct": 1
+  },
+  {
+    "id": "ds32",
+    "text": "Which Java interface ensures sorted elements?",
+    "choices": ["Set", "SortedSet", "Map", "Collection"],
+    "correct": 1
+  },
+  {
+    "id": "ds33",
+    "text": "Which collection is backed by an array?",
+    "choices": ["LinkedList", "ArrayList", "TreeSet", "HashSet"],
+    "correct": 1
+  },
+  {
+    "id": "ds34",
+    "text": "Which algorithm uses a queue internally?",
+    "choices": ["DFS", "BFS", "Binary Search", "Merge Sort"],
+    "correct": 1
+  },
+  {
+    "id": "ds35",
+    "text": "Which Map implementation maintains insertion order?",
+    "choices": ["TreeMap", "HashMap", "LinkedHashMap", "Hashtable"],
+    "correct": 2
+  },
+  {
+    "id": "ds36",
+    "text": "Which Java structure implements a priority queue?",
+    "choices": ["TreeMap", "Deque", "PriorityQueue", "HashSet"],
+    "correct": 2
+  },
+  {
+    "id": "ds37",
+    "text": "Which traversal prints a BST in sorted order?",
+    "choices": ["Pre-order", "Post-order", "In-order", "Reverse level order"],
+    "correct": 2
+  },
+  {
+    "id": "ds38",
+    "text": "Which collection allows fast search, insert, and delete operations?",
+    "choices": ["ArrayList", "LinkedList", "HashSet", "TreeMap"],
+    "correct": 2
+  },
+  {
+    "id": "ds39",
+    "text": "Which data structure can be used to evaluate expressions?",
+    "choices": ["Queue", "Stack", "Heap", "Deque"],
+    "correct": 1
+  },
+  {
+    "id": "ds40",
+    "text": "Which algorithm is used to find shortest paths in a graph?",
+    "choices": ["Dijkstra's Algorithm", "Binary Search", "DFS", "Merge Sort"],
+    "correct": 0
+  },
+  {
+    "id": "ds41",
+    "text": "Which Java class stores unique elements without preserving order?",
+    "choices": ["LinkedList", "ArrayList", "HashSet", "TreeSet"],
+    "correct": 2
+  },
+  {
+    "id": "ds42",
+    "text": "Which heap ensures the largest element is at the root?",
+    "choices": ["Min-Heap", "Max-Heap", "Binary Tree", "AVL Tree"],
+    "correct": 1
+  },
+  {
+    "id": "ds43",
+    "text": "Which interface provides methods like add(), remove(), and contains()?",
+    "choices": ["Map", "Set", "Queue", "Collection"],
+    "correct": 3
+  },
+  {
+    "id": "ds44",
+    "text": "Which implementation provides sorted key-value pairs?",
+    "choices": ["HashMap", "TreeMap", "LinkedHashMap", "HashSet"],
+    "correct": 1
+  },
+  {
+    "id": "ds45",
+    "text": "Which data structure offers amortized O(1) insertion at the end?",
+    "choices": ["ArrayList", "LinkedList", "Stack", "Vector"],
+    "correct": 0
+  },
+  {
+    "id": "ds46",
+    "text": "Which algorithm can detect cycles in a directed graph?",
+    "choices": ["Topological Sort", "Binary Search", "Merge Sort", "Heap Sort"],
+    "correct": 0
+  },
+  {
+    "id": "ds47",
+    "text": "Which Java class allows both stack and queue operations?",
+    "choices": ["ArrayList", "Deque", "TreeSet", "HashSet"],
+    "correct": 1
+  },
+  {
+    "id": "ds48",
+    "text": "Which data structure is best for undo/redo functionality?",
+    "choices": ["Queue", "Stack", "LinkedList", "HashMap"],
+    "correct": 1
+  },
+  {
+    "id": "ds49",
+    "text": "Which data structure can dynamically resize and allow indexed access?",
+    "choices": ["Array", "ArrayList", "Deque", "Vector"],
+    "correct": 1
+  },
+  {
+    "id": "ds50",
+    "text": "Which collection is ideal for constant-time membership tests?",
+    "choices": ["TreeSet", "HashSet", "LinkedList", "PriorityQueue"],
+    "correct": 1
+  },
+  {
+    "id": "os1",
+    "text": "What is the primary purpose of an operating system?",
+    "choices": ["To manage hardware and software resources", "To compile code", "To store user passwords", "To run only background processes"],
+    "correct": 0
+  },
+  {
+    "id": "os2",
+    "text": "Which of the following is NOT a type of operating system?",
+    "choices": ["Batch OS", "Time-sharing OS", "Real-time OS", "Machine-learning OS"],
+    "correct": 3
+  },
+  {
+    "id": "os3",
+    "text": "Which component of the OS manages processes?",
+    "choices": ["File Manager", "Process Scheduler", "Disk Driver", "Memory Allocator"],
+    "correct": 1
+  },
+  {
+    "id": "os4",
+    "text": "Which of the following best describes a process?",
+    "choices": ["A program in execution", "A program stored on disk", "A system call", "A hardware interrupt"],
+    "correct": 0
+  },
+  {
+    "id": "os5",
+    "text": "What is a system call?",
+    "choices": ["A call placed by hardware to software", "A program requesting service from the OS", "A user command", "A debugging feature"],
+    "correct": 1
+  },
+  {
+    "id": "os6",
+    "text": "Which scheduling algorithm may cause starvation?",
+    "choices": ["FCFS", "SJF", "Round Robin", "FIFO"],
+    "correct": 1
+  },
+  {
+    "id": "os7",
+    "text": "Round Robin scheduling is best suited for:",
+    "choices": ["Batch systems", "Real-time systems", "Time-sharing systems", "Embedded systems"],
+    "correct": 2
+  },
+  {
+    "id": "os8",
+    "text": "What is a thread?",
+    "choices": ["A program in memory", "The smallest unit of CPU scheduling", "A CPU register", "A device driver"],
+    "correct": 1
+  },
+  {
+    "id": "os9",
+    "text": "Which of the following is an advantage of multithreading?",
+    "choices": ["Increased memory usage", "Improved responsiveness", "Slower execution", "More context switches"],
+    "correct": 1
+  },
+  {
+    "id": "os10",
+    "text": "Which OS structure divides the OS into layers?",
+    "choices": ["Monolithic", "Layered", "Microkernel", "Real-time"],
+    "correct": 1
+  },
+  {
+    "id": "os11",
+    "text": "A microkernel architecture moves most services to:",
+    "choices": ["Kernel space", "User space", "BIOS", "Cache"],
+    "correct": 1
+  },
+  {
+    "id": "os12",
+    "text": "Which process state means the process is waiting for I/O?",
+    "choices": ["Ready", "Running", "Blocked", "Suspended"],
+    "correct": 2
+  },
+  {
+    "id": "os13",
+    "text": "What is the purpose of a context switch?",
+    "choices": ["To initialize hardware", "To switch the CPU from one process to another", "To allocate disk space", "To load the OS"],
+    "correct": 1
+  },
+  {
+    "id": "os14",
+    "text": "What is a critical section?",
+    "choices": ["Part of code that compiles", "Part of code accessing shared resources", "Part of code executed by the OS", "A hardware buffer"],
+    "correct": 1
+  },
+  {
+    "id": "os15",
+    "text": "Which of these avoids race conditions?",
+    "choices": ["Paging", "Spooling", "Synchronization", "Fragmentation"],
+    "correct": 2
+  },
+  {
+    "id": "os16",
+    "text": "Which is NOT a synchronization mechanism?",
+    "choices": ["Mutex", "Semaphore", "Monitor", "Pipeline"],
+    "correct": 3
+  },
+  {
+    "id": "os17",
+    "text": "Deadlock requires which condition?",
+    "choices": ["Mutual exclusion", "Paging", "CPU scheduling", "Multi-core processing"],
+    "correct": 0
+  },
+  {
+    "id": "os18",
+    "text": "Which algorithm is used for deadlock avoidance?",
+    "choices": ["Banker’s algorithm", "Round Robin", "FIFO", "LRU"],
+    "correct": 0
+  },
+  {
+    "id": "os19",
+    "text": "Virtual memory allows:",
+    "choices": ["Programs to be larger than physical memory", "Programs to run faster", "Elimination of paging", "Direct hardware access"],
+    "correct": 0
+  },
+  {
+    "id": "os20",
+    "text": "What is paging?",
+    "choices": ["Allocating memory in fixed-size blocks", "Encrypting memory", "Deleting processes", "Scheduling CPU time"],
+    "correct": 0
+  },
+  {
+    "id": "os21",
+    "text": "A page fault occurs when:",
+    "choices": ["A program crashes", "A needed page is not in memory", "The OS loads too slowly", "The CPU overheats"],
+    "correct": 1
+  },
+  {
+    "id": "os22",
+    "text": "The page table stores:",
+    "choices": ["File permissions", "Virtual-to-physical address mappings", "Process IDs", "Disk blocks"],
+    "correct": 1
+  },
+  {
+    "id": "os23",
+    "text": "Thrashing occurs when:",
+    "choices": ["CPU is idle", "Memory is nearly full", "Processes spend too much time paging", "Disk space runs out"],
+    "correct": 2
+  },
+  {
+    "id": "os24",
+    "text": "Which memory allocation algorithm reduces fragmentation best?",
+    "choices": ["First fit", "Best fit", "Worst fit", "Random fit"],
+    "correct": 1
+  },
+  {
+    "id": "os25",
+    "text": "Which is an example of a contiguous memory allocation?",
+    "choices": ["Paging", "Segmentation", "Swapping", "Linked allocation"],
+    "correct": 2
+  },
+  {
+    "id": "os26",
+    "text": "Which OS component schedules disk access?",
+    "choices": ["CPU scheduler", "I/O scheduler", "Memory manager", "Linker"],
+    "correct": 1
+  },
+  {
+    "id": "os27",
+    "text": "Which disk scheduling algorithm is similar to elevator movement?",
+    "choices": ["FCFS", "SSTF", "SCAN", "RR"],
+    "correct": 2
+  },
+  {
+    "id": "os28",
+    "text": "A file system manages:",
+    "choices": ["Processes", "Memory frames", "User directories and files", "Network packets"],
+    "correct": 2
+  },
+  {
+    "id": "os29",
+    "text": "Which file allocation method requires linked lists?",
+    "choices": ["Indexed", "Contiguous", "Linked", "Clustered"],
+    "correct": 2
+  },
+  {
+    "id": "os30",
+    "text": "Which is true about directories?",
+    "choices": ["They cannot contain files", "They provide a hierarchical organization", "They store CPU registers", "They are part of ROM"],
+    "correct": 1
+  },
+  {
+    "id": "os31",
+    "text": "Which system program loads the OS at boot time?",
+    "choices": ["Assembler", "Linker", "Bootstrap loader", "Process scheduler"],
+    "correct": 2
+  },
+  {
+    "id": "os32",
+    "text": "What is the kernel?",
+    "choices": ["A type of hardware", "The core part of the operating system", "A user application", "A thread library"],
+    "correct": 1
+  },
+  {
+    "id": "os33",
+    "text": "What do device drivers do?",
+    "choices": ["Control hardware devices", "Execute user programs", "Compile code", "Manage file systems"],
+    "correct": 0
+  },
+  {
+    "id": "os34",
+    "text": "Which is an example of a blocking system call?",
+    "choices": ["write()", "fork()", "sleep()", "exit()"],
+    "correct": 2
+  },
+  {
+    "id": "os35",
+    "text": "Interrupts are used for:",
+    "choices": ["Error logging", "CPU temperature control", "Handling asynchronous events", "File deletion"],
+    "correct": 2
+  },
+  {
+    "id": "os36",
+    "text": "A zombie process is one that:",
+    "choices": ["Is still running", "Has terminated but not been cleaned up", "Is blocked forever", "Is in a deadlock"],
+    "correct": 1
+  },
+  {
+    "id": "os37",
+    "text": "Which of the following is NOT a type of OS interrupt?",
+    "choices": ["Hardware", "Software", "Kernel", "Timer"],
+    "correct": 2
+  },
+  {
+    "id": "os38",
+    "text": "Which IPC mechanism allows unrelated processes to communicate?",
+    "choices": ["Threads", "Shared memory", "Pipes", "Process queues"],
+    "correct": 1
+  },
+  {
+    "id": "os39",
+    "text": "What does the exec() system call do?",
+    "choices": ["Creates a new process", "Replaces process memory with a new program", "Terminates a process", "Allocates memory"],
+    "correct": 1
+  },
+  {
+    "id": "os40",
+    "text": "What is the main advantage of segmentation?",
+    "choices": ["Variable-sized memory blocks", "Fixed-size pages", "Lower disk usage", "No fragmentation"],
+    "correct": 0
+  },
+  {
+    "id": "os41",
+    "text": "Which is true of a real-time OS?",
+    "choices": ["Used only in desktops", "Deterministic response time", "Requires virtual memory", "Uses only batch scheduling"],
+    "correct": 1
+  },
+  {
+    "id": "os42",
+    "text": "What is the purpose of a TLB?",
+    "choices": ["Caches page table entries", "Stores user passwords", "Caches file metadata", "Manages threads"],
+    "correct": 0
+  },
+  {
+    "id": "os43",
+    "text": "Which scheduling algorithm guarantees no starvation?",
+    "choices": ["SJF", "FCFS", "Priority Scheduling", "Round Robin"],
+    "correct": 3
+  },
+  {
+    "id": "os44",
+    "text": "Which memory concept splits programs into logical units?",
+    "choices": ["Paging", "Segmentation", "Multiprogramming", "Swapping"],
+    "correct": 1
+  },
+  {
+    "id": "os45",
+    "text": "The OS component that manages files is:",
+    "choices": ["File System", "Link Editor", "Loader", "Cache Manager"],
+    "correct": 0
+  },
+  {
+    "id": "os46",
+    "text": "Which of the following is a non-preemptive scheduling algorithm?",
+    "choices": ["RR", "SJF (non-preemptive)", "Priority (preemptive)", "MLFQ"],
+    "correct": 1
+  },
+  {
+    "id": "os47",
+    "text": "Fragmentation in memory occurs because:",
+    "choices": ["Files grow too large", "Memory blocks are of incompatible sizes", "Too many processes run", "Threads compete for CPU time"],
+    "correct": 1
+  },
+  {
+    "id": "os48",
+    "text": "Which of the following is NOT a file system?",
+    "choices": ["NTFS", "EXT4", "FAT32", "CPUFS"],
+    "correct": 3
+  },
+  {
+    "id": "os49",
+    "text": "What is kernel mode?",
+    "choices": ["Mode for running user apps", "Mode where OS code executes with full privileges", "Low-power mode", "Debug mode"],
+    "correct": 1
+  },
+  {
+    "id": "os50",
+    "text": "Which process scheduling metric measures average time a process spends waiting?",
+    "choices": ["Turnaround time", "Waiting time", "Response time", "Burst time"],
+    "correct": 1
+  },
+  {
+    "id": "alg1",
+    "text": "What is the time complexity of binary search?",
+    "choices": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "correct": 1
+  },
+  {
+    "id": "alg2",
+    "text": "Which algorithm is NOT a divide-and-conquer algorithm?",
+    "choices": ["Merge Sort", "Quick Sort", "Binary Search", "Bubble Sort"],
+    "correct": 3
+  },
+  {
+    "id": "alg3",
+    "text": "Which sorting algorithm has the best average-case complexity?",
+    "choices": ["Selection Sort", "Bubble Sort", "Quick Sort", "Insertion Sort"],
+    "correct": 2
+  },
+  {
+    "id": "alg4",
+    "text": "What data structure is used in Breadth-First Search?",
+    "choices": ["Stack", "Queue", "Tree", "Graph"],
+    "correct": 1
+  },
+  {
+    "id": "alg5",
+    "text": "What is the worst-case time complexity of Quick Sort?",
+    "choices": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
+    "correct": 3
+  },
+  {
+    "id": "alg6",
+    "text": "Dijkstra’s algorithm is used to find:",
+    "choices": ["Minimum Spanning Tree", "Shortest Path", "Maximum Flow", "Topological Order"],
+    "correct": 1
+  },
+  {
+    "id": "alg7",
+    "text": "Which algorithm uses a priority queue?",
+    "choices": ["Dijkstra’s Algorithm", "Depth-First Search", "Kruskals Algorithm", "Bellman-Ford"],
+    "correct": 0
+  },
+  {
+    "id": "alg8",
+    "text": "Which algorithm guarantees optimal solution in a weighted graph with negative edges but no negative cycles?",
+    "choices": ["Dijkstra’s", "Bellman-Ford", "Prim’s", "Kruskal’s"],
+    "correct": 1
+  },
+  {
+    "id": "alg9",
+    "text": "Which sorting algorithm is considered stable?",
+    "choices": ["Heap Sort", "Quick Sort", "Merge Sort", "Selection Sort"],
+    "correct": 2
+  },
+  {
+    "id": "alg10",
+    "text": "What is the time complexity of inserting into a binary heap?",
+    "choices": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "correct": 1
+  },
+  {
+    "id": "alg11",
+    "text": "Which algorithm is used to detect cycles in a directed graph?",
+    "choices": ["Prim’s", "Kruskal’s", "Topological Sort", "Binary Search"],
+    "correct": 2
+  },
+  {
+    "id": "alg12",
+    "text": "Which algorithm is used for finding a Minimum Spanning Tree?",
+    "choices": ["Floyd-Warshall", "Kruskal’s", "Bellman-Ford", "DFS"],
+    "correct": 1
+  },
+  {
+    "id": "alg13",
+    "text": "Which traversal method is used in Depth-First Search?",
+    "choices": ["Queue", "Stack", "Heap", "Array"],
+    "correct": 1
+  },
+  {
+    "id": "alg14",
+    "text": "What is the worst-case time complexity of Merge Sort?",
+    "choices": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
+    "correct": 2
+  },
+  {
+    "id": "alg15",
+    "text": "Floyd–Warshall algorithm solves:",
+    "choices": ["Single-source shortest path", "All-pairs shortest path", "Minimum spanning tree", "Network max-flow"],
+    "correct": 1
+  },
+  {
+    "id": "alg16",
+    "text": "Which algorithm is commonly used to check if a graph is bipartite?",
+    "choices": ["DFS", "BFS", "Topological Sort", "Dijkstra"],
+    "correct": 1
+  },
+  {
+    "id": "alg17",
+    "text": "The Master Theorem is used to analyze:",
+    "choices": ["Graphs", "Trees", "Divide-and-conquer recurrences", "Dynamic Programming"],
+    "correct": 2
+  },
+  {
+    "id": "alg18",
+    "text": "Which algorithm solves the maximum flow problem?",
+    "choices": ["Bellman-Ford", "Ford-Fulkerson", "Prim’s", "Binary Search"],
+    "correct": 1
+  },
+  {
+    "id": "alg19",
+    "text": "Topological sorting applies to:",
+    "choices": ["Cyclic graphs", "Undirected graphs", "Directed Acyclic Graphs", "Weighted graphs"],
+    "correct": 2
+  },
+  {
+    "id": "alg20",
+    "text": "Which of the following is NOT a stable sorting algorithm?",
+    "choices": ["Merge Sort", "Bubble Sort", "Insertion Sort", "Heap Sort"],
+    "correct": 3
+  },
+  {
+    "id": "alg21",
+    "text": "The longest common subsequence (LCS) problem is typically solved using:",
+    "choices": ["Greedy Algorithm", "Backtracking", "Dynamic Programming", "Branch and Bound"],
+    "correct": 2
+  },
+  {
+    "id": "alg22",
+    "text": "Which algorithm is used for pattern searching in strings?",
+    "choices": ["KMP", "Dijkstra", "Prim", "DFS"],
+    "correct": 0
+  },
+  {
+    "id": "alg23",
+    "text": "Which search method guarantees finding the shallowest solution?",
+    "choices": ["DFS", "A*", "BFS", "Greedy Search"],
+    "correct": 2
+  },
+  {
+    "id": "alg24",
+    "text": "What is the time complexity of building a heap from an array?",
+    "choices": ["O(log n)", "O(n log n)", "O(n)", "O(n²)"],
+    "correct": 2
+  },
+  {
+    "id": "alg25",
+    "text": "Which algorithm uses heuristics to guide search?",
+    "choices": ["BFS", "DFS", "A*", "Bellman-Ford"],
+    "correct": 2
+  },
+  {
+    "id": "alg26",
+    "text": "Which algorithm guarantees optimality when the heuristic is admissible?",
+    "choices": ["Greedy Best-First Search", "Depth First", "A*", "Iterative Deepening"],
+    "correct": 2
+  },
+  {
+    "id": "alg27",
+    "text": "Which algorithm finds SCCs (Strongly Connected Components)?",
+    "choices": ["Tarjan’s Algorithm", "Dijkstra", "Prim", "Floyd-Warshall"],
+    "correct": 0
+  },
+  {
+    "id": "alg28",
+    "text": "Quickselect is used to find:",
+    "choices": ["Smallest element", "Median or k-th smallest", "Maximum flow", "Minimum spanning tree"],
+    "correct": 1
+  },
+  {
+    "id": "alg29",
+    "text": "What is the average time complexity of Quickselect?",
+    "choices": ["O(n)", "O(log n)", "O(n log n)", "O(n²)"],
+    "correct": 0
+  },
+  {
+    "id": "alg30",
+    "text": "Which technique solves problems by combining solutions of subproblems with overlap?",
+    "choices": ["Backtracking", "Divide and Conquer", "Dynamic Programming", "Recursion"],
+    "correct": 2
+  },
+  {
+    "id": "alg31",
+    "text": "Which algorithm is used to find articulation points in a graph?",
+    "choices": ["Tarjan’s Algorithm", "Ford-Fulkerson", "Bellman-Ford", "Prim’s"],
+    "correct": 0
+  },
+  {
+    "id": "alg32",
+    "text": "Which of the following is an in-place sorting algorithm?",
+    "choices": ["Merge Sort", "Heap Sort", "Bucket Sort", "Radix Sort"],
+    "correct": 1
+  },
+  {
+    "id": "alg33",
+    "text": "Which algorithm solves the subset-sum problem optimally?",
+    "choices": ["Greedy", "Dynamic Programming", "Prim’s", "Ford-Fulkerson"],
+    "correct": 1
+  },
+  {
+    "id": "alg34",
+    "text": "Which approach works best for computing Fibonacci numbers efficiently?",
+    "choices": ["Recursion", "Dynamic Programming", "Backtracking", "Greedy"],
+    "correct": 1
+  },
+  {
+    "id": "alg35",
+    "text": "Binary search requires:",
+    "choices": ["Sorted array", "Hash table", "Balanced tree", "Graph"],
+    "correct": 0
+  },
+  {
+    "id": "alg36",
+    "text": "What is the best-case time complexity of Insertion Sort?",
+    "choices": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "correct": 0
+  },
+  {
+    "id": "alg37",
+    "text": "Which algorithm is primarily used for top-down parsing?",
+    "choices": ["Dijkstra", "LL Parsing", "Kruskal", "A*"],
+    "correct": 1
+  },
+  {
+    "id": "alg38",
+    "text": "Which algorithm determines if a graph has a cycle?",
+    "choices": ["DFS", "BFS", "Prim", "Floyd-Warshall"],
+    "correct": 0
+  },
+  {
+    "id": "alg39",
+    "text": "Which problem is NP-complete?",
+    "choices": ["Sorting", "Graph coloring", "Binary search", "Linked list traversal"],
+    "correct": 1
+  },
+  {
+    "id": "alg40",
+    "text": "Which algorithm is used to detect negative cycles?",
+    "choices": ["Dijkstra", "Bellman-Ford", "Prim", "Floyd-Warshall"],
+    "correct": 1
+  },
+  {
+    "id": "alg41",
+    "text": "Which structure is internally used by Prim’s algorithm?",
+    "choices": ["Queue", "Stack", "Priority Queue", "Binary Search Tree"],
+    "correct": 2
+  },
+  {
+    "id": "alg42",
+    "text": "Radix Sort is based on:",
+    "choices": ["Comparison", "Hashing", "Digits and buckets", "Branch and bound"],
+    "correct": 2
+  },
+  {
+    "id": "alg43",
+    "text": "Which algorithm is used to solve 0/1 knapsack optimally?",
+    "choices": ["Greedy", "Dynamic Programming", "Prim", "DFS"],
+    "correct": 1
+  },
+  {
+    "id": "alg44",
+    "text": "The closest pair of points problem is solved efficiently using:",
+    "choices": ["Brute Force", "Dynamic Programming", "Divide and Conquer", "Hashing"],
+    "correct": 2
+  },
+  {
+    "id": "alg45",
+    "text": "Which algorithm finds strongly connected components in linear time?",
+    "choices": ["Kruskal", "Tarjan", "Prim", "A*"],
+    "correct": 1
+  },
+  {
+    "id": "alg46",
+    "text": "Which algorithm is used for transitive closure?",
+    "choices": ["Floyd-Warshall", "Kruskal", "Prim", "Quick Sort"],
+    "correct": 0
+  },
+  {
+    "id": "alg47",
+    "text": "Which algorithm guarantees an optimal solution using a heuristic that never overestimates?",
+    "choices": ["DFS", "BFS", "A*", "Greedy Best-First"],
+    "correct": 2
+  },
+  {
+    "id": "alg48",
+    "text": "Which algorithm finds bridges in a graph?",
+    "choices": ["Tarjan’s Algorithm", "Bellman-Ford", "Kruskal", "A*"],
+    "correct": 0
+  },
+  {
+    "id": "alg49",
+    "text": "Bucket Sort is most efficient when:",
+    "choices": ["Input is uniformly distributed", "Input is sorted", "Input is reverse-sorted", "Input is random"],
+    "correct": 0
+  },
+  {
+    "id": "alg50",
+    "text": "Which algorithm is typically used for solving recurrence relations?",
+    "choices": ["Dynamic Programming", "Master Theorem", "Prim’s", "DFS"],
+    "correct": 1
+  },
+  {
+    "id": "sql1",
+    "text": "What does SQL stand for?",
+    "choices": ["Structured Query Language", "Sequential Query Logic", "Simple Question Language", "Standard Query Level"],
+    "correct": 0
+  },
+  {
+    "id": "sql2",
+    "text": "Which SQL command is used to retrieve data from a database?",
+    "choices": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+    "correct": 2
+  },
+  {
+    "id": "sql3",
+    "text": "Which clause is used to filter rows in SQL?",
+    "choices": ["WHERE", "ORDER BY", "GROUP BY", "SELECT"],
+    "correct": 0
+  },
+  {
+    "id": "sql4",
+    "text": "Which SQL keyword sorts the result-set?",
+    "choices": ["SORT", "ORDER BY", "GROUP BY", "ALIGN BY"],
+    "correct": 1
+  },
+  {
+    "id": "sql5",
+    "text": "Which SQL function returns the number of rows?",
+    "choices": ["SUM()", "MAX()", "COUNT()", "AVG()"],
+    "correct": 2
+  },
+  {
+    "id": "sql6",
+    "text": "Which SQL command inserts new data?",
+    "choices": ["ADD", "INSERT INTO", "APPEND", "NEW"],
+    "correct": 1
+  },
+  {
+    "id": "sql7",
+    "text": "Which JOIN returns only matching rows in both tables?",
+    "choices": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL OUTER JOIN"],
+    "correct": 2
+  },
+  {
+    "id": "sql8",
+    "text": "Which operator checks for a NULL value?",
+    "choices": ["= NULL", "IS NULL", "NULL = NULL", "EQUALS NULL"],
+    "correct": 1
+  },
+  {
+    "id": "sql9",
+    "text": "What does the GROUP BY clause do?",
+    "choices": ["Sorts rows", "Filters rows", "Groups rows with the same values", "Deletes duplicates"],
+    "correct": 2
+  },
+  {
+    "id": "sql10",
+    "text": "Which SQL keyword is used to remove duplicates?",
+    "choices": ["REMOVE", "DISTINCT", "UNIQUE", "FILTER"],
+    "correct": 1
+  },
+  {
+    "id": "sql11",
+    "text": "Which statement updates existing rows?",
+    "choices": ["SET", "MODIFY", "UPDATE", "CHANGE"],
+    "correct": 2
+  },
+  {
+    "id": "sql12",
+    "text": "Which SQL command removes entire rows?",
+    "choices": ["DROP", "DELETE", "REMOVE", "ERASE"],
+    "correct": 1
+  },
+  {
+    "id": "sql13",
+    "text": "Which SQL command removes an entire table?",
+    "choices": ["DELETE", "DROP TABLE", "REMOVE TABLE", "ERASE TABLE"],
+    "correct": 1
+  },
+  {
+    "id": "sql14",
+    "text": "Which constraint enforces unique values?",
+    "choices": ["CHECK", "PRIMARY KEY", "FOREIGN KEY", "DEFAULT"],
+    "correct": 1
+  },
+  {
+    "id": "sql15",
+    "text": "Which command creates a new table?",
+    "choices": ["MAKE TABLE", "CREATE TABLE", "NEW TABLE", "TABLE CREATE"],
+    "correct": 1
+  },
+  {
+    "id": "sql16",
+    "text": "Which SQL statement limits the number of returned rows?",
+    "choices": ["TOP", "LIMIT", "ROWNUM", "CUT"],
+    "correct": 1
+  },
+  {
+    "id": "sql17",
+    "text": "Which statement is used to rename a table?",
+    "choices": ["RENAME TABLE", "ALTER TABLE RENAME", "CHANGE TABLE", "SET TABLE NAME"],
+    "correct": 1
+  },
+  {
+    "id": "sql18",
+    "text": "Which command adds a column to an existing table?",
+    "choices": ["APPEND COLUMN", "ALTER TABLE ADD", "INSERT COLUMN", "UPDATE TABLE ADD"],
+    "correct": 1
+  },
+  {
+    "id": "sql19",
+    "text": "Which clause filters groups created by GROUP BY?",
+    "choices": ["WHERE", "HAVING", "FILTER", "GROUP WHERE"],
+    "correct": 1
+  },
+  {
+    "id": "sql20",
+    "text": "What does a FOREIGN KEY enforce?",
+    "choices": ["Uniqueness", "Referential integrity", "Sorting order", "Index structure"],
+    "correct": 1
+  },
+  {
+    "id": "sql21",
+    "text": "Which SQL command removes only the data from a table, not the table itself?",
+    "choices": ["ERASE", "TRUNCATE TABLE", "DROP TABLE", "REMOVE"],
+    "correct": 1
+  },
+  {
+    "id": "sql22",
+    "text": "Which keyword checks a condition and returns rows that match a pattern?",
+    "choices": ["MATCHES", "LIKE", "COMPARE", "PATTERN"],
+    "correct": 1
+  },
+  {
+    "id": "sql23",
+    "text": "The wildcard % in a LIKE clause means:",
+    "choices": ["Exactly one character", "Anything except numbers", "Any number of characters", "No characters"],
+    "correct": 2
+  },
+  {
+    "id": "sql24",
+    "text": "Which operator returns rows between two values?",
+    "choices": ["BETWEEN", "RANGE", "LIMIT", "WITHIN"],
+    "correct": 0
+  },
+  {
+    "id": "sql25",
+    "text": "Which function returns the highest value?",
+    "choices": ["TOP()", "MAX()", "HIGH()", "GREATEST()"],
+    "correct": 1
+  },
+  {
+    "id": "sql26",
+    "text": "Which JOIN returns all rows from the left table and matched rows from the right?",
+    "choices": ["LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL JOIN"],
+    "correct": 0
+  },
+  {
+    "id": "sql27",
+    "text": "What does ORDER BY default to if ASC/DESC is not specified?",
+    "choices": ["DESC", "ASC", "RANDOM", "NONE"],
+    "correct": 1
+  },
+  {
+    "id": "sql28",
+    "text": "Which constraint prevents NULL values?",
+    "choices": ["PRIMARY KEY", "NOT NULL", "UNIQUE", "CHECK"],
+    "correct": 1
+  },
+  {
+    "id": "sql29",
+    "text": "A PRIMARY KEY is:",
+    "choices": ["A unique identifier for rows", "A pointer to another table", "A sorting index", "An optional constraint"],
+    "correct": 0
+  },
+  {
+    "id": "sql30",
+    "text": "Which keyword combines result-sets of two SELECT statements?",
+    "choices": ["APPEND", "JOIN", "MERGE", "UNION"],
+    "correct": 3
+  },
+  {
+    "id": "sql31",
+    "text": "UNION removes duplicates by default. Which keyword keeps duplicates?",
+    "choices": ["UNION KEEP", "UNION ALL", "UNION DUP", "UNION+"],
+    "correct": 1
+  },
+  {
+    "id": "sql32",
+    "text": "What does the DISTINCT keyword do?",
+    "choices": ["Removes duplicate rows", "Sorts rows", "Limits rows", "Groups rows"],
+    "correct": 0
+  },
+  {
+    "id": "sql33",
+    "text": "Which SQL keyword is used to join tables on matching columns?",
+    "choices": ["MATCH", "CONNECT", "JOIN", "MERGE"],
+    "correct": 2
+  },
+  {
+    "id": "sql34",
+    "text": "Which data type is typically used for text?",
+    "choices": ["INT", "VARCHAR", "FLOAT", "DATE"],
+    "correct": 1
+  },
+  {
+    "id": "sql35",
+    "text": "Which function returns the average value?",
+    "choices": ["SUM()", "AVG()", "MEAN()", "AVERAGE()"],
+    "correct": 1
+  },
+  {
+    "id": "sql36",
+    "text": "Which operator checks if a value matches any value in a list?",
+    "choices": ["IN", "ANY", "ALL", "LIST"],
+    "correct": 0
+  },
+  {
+    "id": "sql37",
+    "text": "Which command modifies table structure?",
+    "choices": ["ALTER TABLE", "UPDATE TABLE", "CHANGE TABLE", "MODIFY"],
+    "correct": 0
+  },
+  {
+    "id": "sql38",
+    "text": "Which is NOT a valid SQL aggregate function?",
+    "choices": ["COUNT", "SUM", "AVERAGE", "MIN"],
+    "correct": 2
+  },
+  {
+    "id": "sql39",
+    "text": "Which SQL keyword is used in subqueries to compare a value with multiple rows?",
+    "choices": ["EACH", "ALL", "EVERY", "COMPARE"],
+    "correct": 1
+  },
+  {
+    "id": "sql40",
+    "text": "What does a CHECK constraint do?",
+    "choices": ["Ensures a condition must be true", "Prevents duplicates", "Links two tables", "Deletes invalid data"],
+    "correct": 0
+  },
+  {
+    "id": "sql41",
+    "text": "Which SQL statement changes data in rows?",
+    "choices": ["UPDATE", "SELECT", "ALTER", "CREATE"],
+    "correct": 0
+  },
+  {
+    "id": "sql42",
+    "text": "Which clause is used to sort rows?",
+    "choices": ["GROUP BY", "SORT BY", "ORDER BY", "SELECT"],
+    "correct": 2
+  },
+  {
+    "id": "sql43",
+    "text": "Which operator checks if a value is within a specified range?",
+    "choices": ["WITHIN", "BETWEEN", "RANGE", "IN"],
+    "correct": 1
+  },
+  {
+    "id": "sql44",
+    "text": "Which SQL keyword is used to remove a column?",
+    "choices": ["DELETE COLUMN", "ALTER TABLE DROP COLUMN", "REMOVE COLUMN", "DROP FIELD"],
+    "correct": 1
+  },
+  {
+    "id": "sql45",
+    "text": "What does a FULL OUTER JOIN return?",
+    "choices": ["Rows only from left table", "Rows only from right table", "Matching rows only", "All rows from both tables"],
+    "correct": 3
+  },
+  {
+    "id": "sql46",
+    "text": "Which clause filters rows before grouping?",
+    "choices": ["WHERE", "HAVING", "ORDER BY", "GROUP FILTER"],
+    "correct": 0
+  },
+  {
+    "id": "sql47",
+    "text": "Which clause filters groups after grouping?",
+    "choices": ["WHERE", "HAVING", "ORDER BY", "GROUP FILTER"],
+    "correct": 1
+  },
+  {
+    "id": "sql48",
+    "text": "What does the MIN() function do?",
+    "choices": ["Returns smallest value", "Returns average value", "Returns largest value", "Returns middle value"],
+    "correct": 0
+  },
+  {
+    "id": "sql49",
+    "text": "Which keyword is used to combine rows from two tables based on a related column?",
+    "choices": ["MERGE", "JOIN", "LINK", "MATCH"],
+    "correct": 1
+  },
+  {
+    "id": "sql50",
+    "text": "Which SQL command permanently deletes a table and its data?",
+    "choices": ["DELETE", "REMOVE", "DROP TABLE", "ERASE"],
+    "correct": 2
+  },
+  {
+    "id": "py1",
+    "text": "What is the output of: print(type([]))?",
+    "choices": ["<class 'list'>", "<class 'array'>", "<class 'tuple'>", "<class 'sequence'>"],
+    "correct": 0
+  },
+  {
+    "id": "py2",
+    "text": "Which keyword is used to create a function in Python?",
+    "choices": ["func", "def", "function", "lambda"],
+    "correct": 1
+  },
+  {
+    "id": "py3",
+    "text": "What is the correct file extension for Python files?",
+    "choices": [".pyt", ".pyth", ".py", ".pt"],
+    "correct": 2
+  },
+  {
+    "id": "py4",
+    "text": "What is the output of: print(3 * 'ab')?",
+    "choices": ["ab3", "abab", "ababab", "Error"],
+    "correct": 2
+  },
+  {
+    "id": "py5",
+    "text": "Which data type is immutable in Python?",
+    "choices": ["List", "Dictionary", "Tuple", "Set"],
+    "correct": 2
+  },
+  {
+    "id": "py6",
+    "text": "What does the len() function do?",
+    "choices": ["Returns item type", "Returns number of arguments", "Returns length of an object", "Counts variables in scope"],
+    "correct": 2
+  },
+  {
+    "id": "py7",
+    "text": "Which operator is used for exponentiation in Python?",
+    "choices": ["^", "**", "//", "exp()"],
+    "correct": 1
+  },
+  {
+    "id": "py8",
+    "text": "Which keyword is used for a loop in Python?",
+    "choices": ["repeat", "loop", "iterate", "for"],
+    "correct": 3
+  },
+  {
+    "id": "py9",
+    "text": "What is the output of: print(bool(0))?",
+    "choices": ["True", "False", "0", "Error"],
+    "correct": 1
+  },
+  {
+    "id": "py10",
+    "text": "What does the 'pass' statement do?",
+    "choices": ["Exits loop", "Skips iteration", "Does nothing", "Throws an exception"],
+    "correct": 2
+  },
+  {
+    "id": "py11",
+    "text": "Which collection is unordered and has unique elements?",
+    "choices": ["List", "Tuple", "Set", "Dictionary"],
+    "correct": 2
+  },
+  {
+    "id": "py12",
+    "text": "What is the output of: print('2' + '3')?",
+    "choices": ["5", "23", "Error", "2 3"],
+    "correct": 1
+  },
+  {
+    "id": "py13",
+    "text": "Which of these is a valid variable name?",
+    "choices": ["2name", "name_2", "my-name", "class"],
+    "correct": 1
+  },
+  {
+    "id": "py14",
+    "text": "Which function converts a string to an integer?",
+    "choices": ["str()", "chr()", "int()", "float()"],
+    "correct": 2
+  },
+  {
+    "id": "py15",
+    "text": "What is a lambda function?",
+    "choices": ["A class method", "An anonymous function", "A recursive function", "A generator"],
+    "correct": 1
+  },
+  {
+    "id": "py16",
+    "text": "Which method adds an item to a list?",
+    "choices": ["append()", "add()", "insert()", "push()"],
+    "correct": 0
+  },
+  {
+    "id": "py17",
+    "text": "Which keyword is used to handle exceptions?",
+    "choices": ["except", "handle", "recover", "trap"],
+    "correct": 0
+  },
+  {
+    "id": "py18",
+    "text": "What is the result of: 10 // 3?",
+    "choices": ["3.33", "3", "4", "Error"],
+    "correct": 1
+  },
+  {
+    "id": "py19",
+    "text": "What is slicing?",
+    "choices": ["Removing data", "Filtering dictionary keys", "Extracting a subsequence", "Encrypting data"],
+    "correct": 2
+  },
+  {
+    "id": "py20",
+    "text": "What keyword defines a class?",
+    "choices": ["defclass", "object", "cls", "class"],
+    "correct": 3
+  },
+  {
+    "id": "py21",
+    "text": "Which symbol is used to start a comment?",
+    "choices": ["//", "#", "/*", "<!--"],
+    "correct": 1
+  },
+  {
+    "id": "py22",
+    "text": "What does the range() function return?",
+    "choices": ["A list", "A tuple", "A range object", "An iterator"],
+    "correct": 2
+  },
+  {
+    "id": "py23",
+    "text": "What is the output of: type({})?",
+    "choices": ["dict", "set", "list", "tuple"],
+    "correct": 0
+  },
+  {
+    "id": "py24",
+    "text": "Which method removes and returns the last list item?",
+    "choices": ["delete()", "remove()", "extract()", "pop()"],
+    "correct": 3
+  },
+  {
+    "id": "py25",
+    "text": "Which is NOT a Python data type?",
+    "choices": ["list", "map", "set", "tuple"],
+    "correct": 1
+  },
+  {
+    "id": "py26",
+    "text": "Python is:",
+    "choices": ["Compiled", "Interpreted", "Both", "Neither"],
+    "correct": 1
+  },
+  {
+    "id": "py27",
+    "text": "What is the output of: print(2 == '2')?",
+    "choices": ["True", "False", "Error", "None"],
+    "correct": 1
+  },
+  {
+    "id": "py28",
+    "text": "Which keyword stops a loop?",
+    "choices": ["exit", "stop", "break", "terminate"],
+    "correct": 2
+  },
+  {
+    "id": "py29",
+    "text": "Which symbol is used for dictionary key-value pairs?",
+    "choices": ["=", ":", "::", "=>"],
+    "correct": 1
+  },
+  {
+    "id": "py30",
+    "text": "Which built-in type is iterable?",
+    "choices": ["list", "dict", "string", "All of these"],
+    "correct": 3
+  },
+  {
+    "id": "py31",
+    "text": "What is the output of: bool('False')?",
+    "choices": ["False", "True", "Error", "None"],
+    "correct": 1
+  },
+  {
+    "id": "py32",
+    "text": "Which method converts an iterable into a list?",
+    "choices": ["to_list()", "makeList()", "list()", "convert()"],
+    "correct": 2
+  },
+  {
+    "id": "py33",
+    "text": "What is a module?",
+    "choices": ["A Python package", "A file containing Python code", "A class instance", "An IDE plugin"],
+    "correct": 1
+  },
+  {
+    "id": "py34",
+    "text": "Which keyword imports a module?",
+    "choices": ["include", "require", "import", "module"],
+    "correct": 2
+  },
+  {
+    "id": "py35",
+    "text": "What is pip?",
+    "choices": ["Python compiler", "Package installer", "Debugger", "Interpreter"],
+    "correct": 1
+  },
+  {
+    "id": "py36",
+    "text": "Which function returns the maximum item?",
+    "choices": ["big()", "largest()", "max()", "top()"],
+    "correct": 2
+  },
+  {
+    "id": "py37",
+    "text": "Which loop is guaranteed to execute at least once?",
+    "choices": ["for", "while", "do-while (not in Python)", "repeat"],
+    "correct": 2
+  },
+  {
+    "id": "py38",
+    "text": "What is the correct way to open a file for reading?",
+    "choices": ["open('file')", "open('file', 'r')", "read('file')", "file.open()"],
+    "correct": 1
+  },
+  {
+    "id": "py39",
+    "text": "What is the output of: print(5 in [1,2,3])?",
+    "choices": ["True", "False", "Error", "None"],
+    "correct": 1
+  },
+  {
+    "id": "py40",
+    "text": "What is a Python package?",
+    "choices": ["A zip file", "A directory with __init__.py", "A compiled module", "A virtual environment"],
+    "correct": 1
+  },
+  {
+    "id": "py41",
+    "text": "Which statement defines a generator?",
+    "choices": ["yield", "return", "generate", "new"],
+    "correct": 0
+  },
+  {
+    "id": "py42",
+    "text": "How do you check the length of a list?",
+    "choices": ["len(list)", "count(list)", "size(list)", "length(list)"],
+    "correct": 0
+  },
+  {
+    "id": "py43",
+    "text": "Which keyword is used to define an anonymous block?",
+    "choices": ["def", "lambda", "block", "anon"],
+    "correct": 1
+  },
+  {
+    "id": "py44",
+    "text": "What is the output of: print(type({1,2,3}))?",
+    "choices": ["list", "tuple", "set", "dict"],
+    "correct": 2
+  },
+  {
+    "id": "py45",
+    "text": "What is the output of: print(10 % 3)?",
+    "choices": ["1", "3", "0.3", "Error"],
+    "correct": 0
+  },
+  {
+    "id": "py46",
+    "text": "Which function returns the type of an object?",
+    "choices": ["class()", "objtype()", "typeof()", "type()"],
+    "correct": 3
+  },
+  {
+    "id": "py47",
+    "text": "Which operator checks for equality?",
+    "choices": ["=", "==", "===", "equals"],
+    "correct": 1
+  },
+  {
+    "id": "py48",
+    "text": "Which method removes duplicates from a list?",
+    "choices": ["unique()", "set()", "distinct()", "filter()"],
+    "correct": 1
+  },
+  {
+    "id": "py49",
+    "text": "What is the output of: print([].append(1))?",
+    "choices": ["[1]", "None", "1", "Error"],
+    "correct": 1
+  },
+  {
+    "id": "py50",
+    "text": "What does IDE stand for?",
+    "choices": ["Integrated Development Environment", "Internal Debug Engine", "Interactive Dev Editor", "Integrated Data Executor"],
+    "correct": 0
+  }
+]
