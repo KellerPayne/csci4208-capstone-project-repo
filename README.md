@@ -2,7 +2,11 @@
 
 A fast, browser-based multiplayer quiz game built for students in Computer Science at UNO to compete in a Kahoot-style format. 
 
-## Screenshots / Demo
+## Demo Video
+
+View the demo video here:
+
+[CSCI CompSci Quiz Clash Demo Video](https://drive.google.com/file/d/1ZKIHUilnPToyvur1TkgZ9_PKMka6RKWm/view?usp=sharing)
 
 ## How to Run the Project
 ### Requirements
