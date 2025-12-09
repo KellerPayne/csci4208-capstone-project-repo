@@ -59,16 +59,16 @@ curl -X POST http://localhost:3000/api/quiz/answer \
 -d '{"playerId": "123", "questionId": "ds17", "answerIndex": 2}'
 ```
 
-Full API Documentation can be found in the Developer Docs section
+Full API Documentation can be found in [api_endpoints.md](docs/api_endpoints.md)
 
 ## Developer Docs
 These documents are inside of the /docs/ directory:
-- Architecture Sketch: `docs/architecture_sketch.md`
+- Architecture Sketch: [architecture_sketch.md](docs/architecture_sketch.md)
 - Sprint Planning Docs
-    - `docs/dod-sprint1.md`
-    - `docs/dod-sprint2.md`
-    - `docs/dod-sprint3.md`
-    - `docs/dod-sprint4.md`
+    - [dod-sprint1.md](docs/dod-sprint1.md)
+    - [dod-sprint2.md](docs/dod-sprint2.md)
+    - [dod-sprint3.md](docs/dod-sprint3.md)
+    - [dod-sprint4.md](docs/dod-sprint4.md)
 - Design
-    - `docs/api_endpoints.md`
-    - `docs/roadmap.md`
+    - [api_endpoints.md](docs/api_endpoints.md)
+    - [roadmap.md](docs/roadmap.md)
