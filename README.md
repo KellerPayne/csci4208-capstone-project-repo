@@ -47,7 +47,7 @@ curl -X POST http://localhost:3000/api/players \
 
 ### Join a Session
 ```bash
-curl -X POST http://localhost:3000/api/quiz/answer \
+curl -X POST http://localhost:3000/api/session/join \
 -H "Content-Type: application/json" \
 -d '{"playerId": "123", "subjectPrefix": "ds"}'
 ```
