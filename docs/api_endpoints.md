@@ -6,13 +6,29 @@
 
 ### `GET /api/players`
 Retrieve all players.
-
+**Body:**
+```json
+[
+  {
+    "id": "uuid",
+    "name": "Alice",
+    "subjectPrefix": "q",
+    "score": 12,
+    "createdAt": 1765250751256
+  }
+]
+```
 ### `POST /api/players`
 Create a new player.
 
 **Body:**
 ```json
-{"name": "Alice"}
+{
+  "id": "uuid",
+  "name": "Alice",
+  "subjectPrefix": "q",
+  "score": 0
+}
 ```
 
 ### `GET /api/players/:id`
@@ -20,6 +36,13 @@ Retrieve a specific player.
 
 ### `PATCH /api/players/:id`
 Update player fields (like score).
+
+**Body:**
+```json
+{
+  "score": 18
+}
+```
 
 ### `DELETE /api/players/:id`
 Remove a player.
@@ -33,21 +56,46 @@ Adds a player to the active session.
 
 **Body:**
 ```json
-{"playerID": "123"}
+{
+  "playerId": "123",
+  "subjectPrefix": "q"
+}
 ```
 
-### `GET /api/session/current-question`
+**Response:**
+```json
+{
+  "id": "sessionUUID",
+  "subjectPrefix": "q",
+  "playerIds": ["123"],
+  "currentQuestionIndex": 0,
+  "isActive": true
+}
+```
+
+### `GET /api/session/current-question/:sessionId`
 Returns the next question for the requesting player.
 
-### `POST /api/session/answer`
+**Response:**
+```json
+{
+  "id": "q1",
+  "text": "What does JVM stand for?",
+  "choices": ["A", "B", "C", "D"],
+  "correctIndex": 1
+}
+```
+
+### `POST /api/quiz/answer`
 Submit an answer.
 
 **Body:**
 ```json
 {
-    "playerID": "123",
-    "questionID": "q10",
-    "answer": "B"
+  "playerId": "123",
+  "sessionId": "abc-session",
+  "questionId": "q1",
+  "answerIndex": 2
 }
 ```
 
