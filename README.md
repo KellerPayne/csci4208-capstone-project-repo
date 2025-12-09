@@ -1,4 +1,4 @@
-# UNO Study Arena
+# UNO CompSci Quiz Clash
 
 A fast, browser-based multiplayer quiz game built for students in Computer Science at UNO to compete in a Kahoot-style format. 
 
