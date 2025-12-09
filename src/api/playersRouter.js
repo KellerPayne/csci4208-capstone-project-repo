@@ -28,7 +28,7 @@ playersRouter.get('/', (req, res) => {
 */
 
 playersRouter.post('/', (req, res) => {
-    const player = playerService.createPlayer(req.body.name);
+    const player = playerService.createPlayer(req.body.name, req.body.subjectPrefix);
     res.status(201).json(player);
 });
 

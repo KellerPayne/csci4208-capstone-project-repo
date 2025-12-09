@@ -2,43 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UNO Study Arena</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>UNO Study Arena</h1>
+  <div class="container">
+    
+    <h1>UNO Study Arena</h1>
 
-  <div id="status"></div>
+    <div id="leaderboard" class="card leaderboard">
+      <h2>Leaderboard</h2>
+      <div id="leaderboardList">Loading...</div>
+    </div>
 
-  <!-- Player name input -->
-  <div>
-    <label for="playerName">Name:</label>
-    <input id="playerName" type="text" placeholder="Enter your name" />
+    <div id="status" class="status"></div>
+
+    <!-- Player name input -->
+    <div class="card" id="joinCard">
+      <label for="playerName">Name:</label>
+      <input id="playerName" type="text" placeholder="Enter your name" />
+    
+
+      <!-- Subject selector -->
+      <label for="subjectSelect">Subject:</label>
+      <select id="subjectSelect">
+        <option value="">-- Choose a subject --</option>
+        <option value="q">Java</option>
+        <option value="ds">Data Structures</option>
+        <option value="os">Operating Systems</option>
+        <option value="alg">Algorithms</option>
+        <option value="sql">SQL</option>
+        <option value="py">Python</option>
+      </select>
+    
+
+      <button id="joinGame">Join Game</button>
+    </div>
+
+    <!-- Question area -->
+    <div id="questionArea" style="display: none;">
+      <h2 id="questionText"></h2>
+      <div id="choices" class="choices"></div>
+    </div>
+    <button id="exitGame" class="exit-btn" style="display:none;">Exit Game</button>
   </div>
-
-  <!-- Subject selector -->
-  <div>
-    <label for="subjectSelect">Subject:</label>
-    <select id="subjectSelect">
-      <option value="">-- Choose a subject --</option>
-      <option value="q">Java</option>
-      <option value="ds">Data Structures</option>
-      <option value="os">Operating Systems</option>
-      <option value="alg">Algorithms</option>
-      <option value="sql">SQL</option>
-      <option value="py">Python</option>
-    </select>
-  </div>
-
-  <button id="joinGame">Join Game</button>
-
-  <hr />
-
-  <!-- Question area -->
-  <div id="questionArea" style="display: none;">
-    <h2 id="questionText"></h2>
-    <div id="choices"></div>
-  </div>
-
   <script src="./client.js"></script>
 </body>
 </html>

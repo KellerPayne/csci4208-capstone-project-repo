@@ -4,11 +4,12 @@ import crypto from 'crypto';    // imports Node's cryptography library to genera
 const db = new Database('players.json'); // creates a database instance that loads, caches, and saves to players.json file
 
 export const players = {    // players class that services layer will import an use; hence 'export'
-    create(name) {      // add a new player to the database
+    create(name, subjectPrefix) {      // add a new player to the database
         const newPlayer = {
             id: crypto.randomUUID(),        // generates a universally unique ID for playerId
             name,       // saves the name passed into the function as the player's name
             score: 0,       // sets player's points to 0 initially
+            subjectPrefix,
             createdAt: Date.now()       // timestamp used for sorting or metadata
         };
         db.cache.push(newPlayer);       // adds the new player into the cached in-memory array

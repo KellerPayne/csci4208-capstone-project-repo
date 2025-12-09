@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.card input, .card select {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.status {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    background: #fff8d4;
+    color: #8a7400;
+    display: none;
+}
+
+button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    background: #4a74ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3359e6;
+}
+
+#questionText {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.choices button {
+    width: 100%;
+    margin-bottom: 10px;
+    background: #eef1ff;
+    color: #222;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.choices button:hover {
+    background: #dce3ff;
+}
+
+.leaderboard {
+    margin-bottom: 20px;
+}
+
+#leaderboardList {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.exit-btn {
+    background: #cf3b3b;
+    margin-top: 10px;
+}
+
+.exit-btn:hover {
+    background: #a62e2e;
+}
