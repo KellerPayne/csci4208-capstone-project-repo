@@ -15,11 +15,11 @@ export const sessions = {
             createdAt       // timestamp for debugging/sorting if needed
         };
 
-        const all = db.getAll();
-        all.push(newSession);
-        db.writeAll(all);
+        const all = db.getAll();        // reads all existing sessions from sessions.json
+        all.push(newSession);       // adds newly created session to the list
+        db.writeAll(all);       // saves the entire updated list back to disk
 
-        return newSession;
+        return newSession;      // returns the new session to whoever called create()
     },
 
     // returns all sessions from the in-memory cache

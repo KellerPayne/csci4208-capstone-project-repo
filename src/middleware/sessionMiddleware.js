@@ -4,7 +4,7 @@ Middleware class that ensures that every client that connects to the server gets
 stored in a cookie.
 */
 
-export function sessionMiddleware(req, res, next) {
+export function sessionMiddleware(req, next) {
     if (!req.sessionId) {   // checks if the request already has a sessionId
         req.sessionId = crypto.randomUUID();        // if not, creates and assigns a new sessionId, stores it in the session storage, and attaches cookie to browser
     }

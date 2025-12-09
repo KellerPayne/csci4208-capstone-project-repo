@@ -5,9 +5,9 @@ export const sessionRouter = express.Router();  // create new router object
 // allows player to join the game session
 sessionRouter.post('/join', (req, res, next) => {
     try {
-        const {playerId, subjectPrefix} = req.body;
+        const {playerId, subjectPrefix} = req.body;     // extracts playerId and subjectPrefix from JSON body sent by client
 
-        if (!playerId || !subjectPrefix) {
+        if (!playerId || !subjectPrefix) {      // if either of those fields are empty, throws an error
             throw new Error("Missing required fields: playerId, subjectPrefix");
         }
 
@@ -21,7 +21,7 @@ sessionRouter.post('/join', (req, res, next) => {
 // get question for the current session
 sessionRouter.get('/current-question/:sessionId', (req, res, next) => {
     try {
-        const {sessionId} = req.params;
+        const {sessionId} = req.params;     // extracts sessionId from the request URL
 
         const q = sessionService.getCurrentQuestion(sessionId);     // middleware sets req.session.sessionId and assigns a session ID cookie, calls service layer
         res.json(q);        // sends question object as JSON
